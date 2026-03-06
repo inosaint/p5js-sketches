@@ -23,11 +23,16 @@
       }
 
       .grid {
-        display: grid;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
         gap: 20px;
+        overflow-x: auto;
       }
 
       .card {
+        flex: 0 0 624px;
+        width: 624px;
         background: #fff;
         border: 1px solid #ddd;
         border-radius: 12px;
@@ -42,7 +47,7 @@
 
       iframe {
         display: block;
-        width: 100%;
+        width: 600px;
         border: 0;
         border-radius: 8px;
         background: #fff;
